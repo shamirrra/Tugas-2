@@ -29,4 +29,4 @@ __Jelaskan bagaimana cara kamu mengimplementasikan poin 1 sampai dengan 4 di ata
 * Terakhir, saya melakukan _deployment_ pada Heroku. Setelah log in akun, saya membuat aplikasi baru melalui _create new app_. Saya menggunakan nama aplikasi “pbp-tugas-2-shamira” untuk tugas ini. Setelah itu, saya menambahkan _key_ dan _value_ pada Config Vars. Dua _key_ serta _value_ baru tersebut adalah _key_ HEROKU_APP_NAME dengan _value_ nama aplikasi dan _key_ SECRET_KEY dengan _value_ berupa _secrets_. Lalu, saya membuat file dpl.yml serta menambahkan _directory_ menuju file tersebut pada Github. File dpl.yml berisi instruksi untuk mengeksekusi _deployment_ oleh _runner_ di GitHub Actions. Setelah itu, saya menghubungkan _repository_ pada Github dan melakukan _deploy_ dengan Deploy Branch.
 
 ## Link Aplikasi Heroku
-Akses ![di_sini](https://pbp-tugas-2-shamira.herokuapp.com/katalog/)
+![Link ini](https://pbp-tugas-2-shamira.herokuapp.com/)
