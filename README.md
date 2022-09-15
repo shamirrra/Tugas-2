@@ -1,16 +1,16 @@
-__Nama : Shamira Alifanindya Prasetya__
-__NPM  : 2106636376__
-__Kelas: PBP-A__
+__Nama : Shamira Alifanindya Prasetya
+NPM  : 2106636376
+Kelas: PBP-A__
 
-##PBP TUGAS 2##
+## PBP TUGAS 2 ##
 Pemrograman Berbasis Platform (CSGE602022) - diselenggarakan oleh Fakultas Ilmu Komputer Universitas Indonesia, Semester Ganjil 2022/2023
 
 ## Deskripsi Tugas
 Mengimplementasikan konsep Model-View-Template pada Django serta beberapa hal yang sudah dipelajari selama tutorial lab 1.
 
 ## Jawaban
-__Buatlah bagan yang berisi request client ke web aplikasi berbasis Django beserta responnya dan jelaskan pada bagan tersebut kaitan antara urls.py, views.py, models.py, dan berkas html;__
-
+__Buatlah bagan yang berisi request client ke web aplikasi berbasis Django beserta responnya dan jelaskan pada bagan tersebut kaitan antara urls.py, views.py, models.py, dan berkas html.__
+![](https://github.com/shamirrra/Tugas-2/blob/main/asset/Bagan%20Tugas%202%20Shamira.png)
 
 __Jelaskan kenapa menggunakan virtual environment? Apakah kita tetap dapat membuat aplikasi web berbasis Django tanpa menggunakan virtual environment?__
 Virtual environment adalah ruang virtual yang mengisolasi _project_ yang sedang dijalankan dari _dependencies_ utama. Virtual environment digunakan agar pada _project_ yang sedang dikembangkan tidak terjadi perbedaan dan perubahan versi _library_ atau _package_ meski telah melakukan update _library version_ pada _project_ lainnya. Setiap _project_ memiliki kebutuhannya masing-masing, virtual environment memungkinkan kita mengembangkan _project_ dengan _library version_ dan _dependencies_ yang berbeda-beda sesuai dengan kebutuhan _project_ tersebut. Virtual environment sangat berperan ketika melakukan pengembangan _project_ bersama tim. Setiap orang dapat memiliki versi Python dan sistem operasi yang berbeda-beda. Virtual environment memastikan _project_ dapat dikembangkan dengan versi _library_ dan _dependencies_ yang sama. Pengembangan web dengan Django tanpa virtual environment tetap dapat dilakukan, tetapi tidak akan efektif jika berada di dalam tim. Dengan kata lain, lebih cocok untuk _individual developer_, tetapi tetap harus memperhatikan kebutuhan _project_.
