@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <h1>Assignment 3 PBP</h1>
+
+    <h5>Name: {{ name }}</h5>
+
+    <h5>Student ID: {{ student_id }}</h5>
+
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Rating</th>
+            <th>Watched</th>
+            <th>Release date</th>
+            <th>Review</th>
+        </tr>
+        {% for item in watch_list %}
+            <tr>
+                <th>{{item.title}}</th>
+                <th>{{item.rating}}</th>
+                <th>{{item.watched}}</th>
+                <th>{{item.release_date}}</th>
+                <th>{{item.review}}</th>
+            </tr>
+        {% endfor %}
+    </table>
+
+{% endblock content %}

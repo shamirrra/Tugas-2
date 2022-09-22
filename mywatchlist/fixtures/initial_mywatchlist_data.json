@@ -1,0 +1,112 @@
+[
+    {
+        "model":"mywatchlist.watchlist",
+        "pk":1,
+        "fields":{
+            "watched": "yes",
+            "title": "Emergency Declaration",
+            "rating": "5",
+            "release_date": "August 16, 2022",
+            "review": "Made me watched the movie thrice in spare of a week."
+        }
+    },
+    {
+    "model":"mywatchlist.watchlist",
+    "pk":2,
+    "fields":{
+        "watched": "not yet",
+        "title": "Sweet and Sour",
+        "rating": "4",
+        "release_date": "June 4, 2021",
+        "review": "Folds the real sweet and sour of a romantic relationship story (with an unexpected twist)."
+        }
+    },
+    {
+        "model":"mywatchlist.watchlist",
+        "pk":3,
+        "fields":{
+            "watched": "not yet",
+            "title": "Mencuri Raden Saleh",
+            "rating": "5",
+            "release_date": "August 25, 2022",
+            "review": "Superb robbery themed movie. Really refreshing and brings out the excitement with its action."
+        }
+    },
+    {
+        "model":"mywatchlist.watchlist",
+        "pk":4,
+        "fields":{
+            "watched": "yes",
+            "title": "Pengabdi Setan",
+            "rating": "3",
+            "release_date": "August 4, 2022",
+            "review": "Not that scary for a horror movie. The first one is still more memorable"
+        }
+    },
+    {
+        "model":"mywatchlist.watchlist",
+        "pk":5,
+        "fields":{
+            "watched": "not yet",
+            "title": "Decision to Leave",
+            "rating": "5",
+            "release_date": "July 15, 2022",
+            "review": "Tragic romance and obsession trope inside a murder investigation with jaw-dropping cinematography."
+        }
+    },
+    {
+        "model":"mywatchlist.watchlist",
+        "pk":6,
+        "fields":{
+            "watched": "yes",
+            "title": "Akhirat: A Love Story",
+            "rating": "4",
+            "release_date": "December 2, 2021",
+            "review": "Unique love story with unexpected (or kind of expected) ending."
+        }
+    },
+    {
+        "model":"mywatchlist.watchlist",
+        "pk":7,
+        "fields":{
+            "watched": "not yet",
+            "title": "Top Gun: Maverick",
+            "rating": "5",
+            "release_date": "May 27, 2022",
+            "review": "It's THE Tom Cruise. Period."
+        }
+    },
+    {
+        "model":"mywatchlist.watchlist",
+        "pk":8,
+        "fields":{
+            "watched": "yes",
+            "title": "Jurassic World: Dominion",
+            "rating": "5",
+            "release_date": "June 8, 2022",
+            "review": "Exciting to see the old casts back in action."
+        }
+    },
+    {
+        "model":"mywatchlist.watchlist",
+        "pk":9,
+        "fields":{
+            "watched": "not yet",
+            "title": "Red Notice",
+            "rating": "4",
+            "release_date": "November 4, 2021",
+            "review": "Dwayne Johnson + Ryan Reynolds = pure comedy."
+        }
+    },
+    {
+        "model":"mywatchlist.watchlist",
+        "pk":10,
+        "fields":{
+            "watched": "yes",
+            "title": "Parasite",
+            "rating": "5",
+            "release_date": "August 16, 2022",
+            "review": "Best movie of all time. Totally deserved that Oscar"
+        }
+    }
+]
