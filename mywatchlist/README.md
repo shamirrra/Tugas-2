@@ -48,7 +48,16 @@ __Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas!__
 * Pada views.py di aplikasi mywatchlist, membuat fungsi-fungsi untuk menampilkan data dalam format HTML, XML, dan JSON. Selanjutnya membuat folder baru bernama templates untuk menambahkan file HTML. Lalu, menambahkan routing menuju page HTML, XML, dan JSON pada views.py di aplikasi mywatchlist. Pada urls.py di folder project_django juga ditambahkan path menuju urls milik mywatchlist.
 
 ## Postman
+Postman HTML
+![](/asset/postman html.png)
 
+Postman XML
+![](/asset/postman xml.png)
+
+Postman JSON
+![](/asset/postman json.png)
 
 ## Link Aplikasi Heroku
-Akses di [link ini.](https://pbp-tugas-2-shamira.herokuapp.com/)
+Lihat HTML di [link ini.](https://pbp-tugas-2-shamira.herokuapp.com/mywatchlist/html)
+Lihat XML di [link ini.](https://pbp-tugas-2-shamira.herokuapp.com/mywatchlist/xml)
+Lihat JSON di [link ini.](https://pbp-tugas-2-shamira.herokuapp.com/mywatchlist/json)
