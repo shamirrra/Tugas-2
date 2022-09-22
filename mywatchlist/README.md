@@ -33,9 +33,11 @@ HTML:
 * Tujuan utama HTML adalah untuk penyajian data
 
 
+
 __Jelaskan mengapa kita memerlukan data delivery dalam pengimplementasian sebuah platform?__
 
 Seiring berkembangnya teknologi, data yang dikirimkan semakin beragam bentuk dan formatnya. Data delivery yang dilakukan dapat membuat penyajian datanya menjadi dinamis.
+
 
 
 __Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas!__
@@ -46,6 +48,7 @@ __Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas!__
 * Setelah itu, membuat folder baru bernama fixture dan menambahkan file baru berformat json dengan nama 'initial_mywatchlist_data.json'. Lalu, menambahkan 10 data baru pada file json tersebut dan langsung melakukan load data di CMD.
 
 * Pada views.py di aplikasi mywatchlist, membuat fungsi-fungsi untuk menampilkan data dalam format HTML, XML, dan JSON. Selanjutnya membuat folder baru bernama templates untuk menambahkan file HTML. Lalu, menambahkan routing menuju page HTML, XML, dan JSON pada views.py di aplikasi mywatchlist. Pada urls.py di folder project_django juga ditambahkan path menuju urls milik mywatchlist.
+
 
 ## Postman
 Postman HTML
