@@ -49,15 +49,17 @@ __Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas!__
 
 ## Postman
 Postman HTML
-![](/asset/postman html.png)
+![](https://raw.githubusercontent.com/shamirrra/Tugas-2/main/asset/postman%20html.png)
 
 Postman XML
-![](/asset/postman xml.png)
+![](https://raw.githubusercontent.com/shamirrra/Tugas-2/main/asset/postman%20xml.png)
 
 Postman JSON
-![](/asset/postman json.png)
+![](https://raw.githubusercontent.com/shamirrra/Tugas-2/main/asset/postman%20json.png)
 
 ## Link Aplikasi Heroku
 Lihat HTML di [link ini.](https://pbp-tugas-2-shamira.herokuapp.com/mywatchlist/html)
+
 Lihat XML di [link ini.](https://pbp-tugas-2-shamira.herokuapp.com/mywatchlist/xml)
+
 Lihat JSON di [link ini.](https://pbp-tugas-2-shamira.herokuapp.com/mywatchlist/json)
