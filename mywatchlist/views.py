@@ -12,7 +12,7 @@ def show_watch_list(request):
         'name': 'Shamira',
         'student_id': '2106636376',
     }
-    return render(request, "mywatchlist.hmtl", context)
+    return render(request, "mywatchlist.html", context)
 
 def show_xml(request):
     data_watch_list = WatchList.objects.all()
