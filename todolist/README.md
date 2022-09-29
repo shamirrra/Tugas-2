@@ -8,16 +8,16 @@ __Kelas: PBP-A__
 Pemrograman Berbasis Platform (CSGE602022) - diselenggarakan oleh Fakultas Ilmu Komputer Universitas Indonesia, Semester Ganjil 2022/2023
 
 ## Deskripsi Tugas
-Mengimplementasikan elemen <form>, konsep autentikasi, dan beberapa hal yang dipelajari selama tutorial lab 3.
+Mengimplementasikan elemen form , konsep autentikasi, dan beberapa hal yang dipelajari selama tutorial lab 3.
 
 ## Jawaban
-__Apa kegunaan {% csrf_token %} pada elemen <form>? Apa yang terjadi apabila tidak ada potongan kode tersebut pada elemen <form>?__
+__Apa kegunaan {% csrf_token %} pada elemen form? Apa yang terjadi apabila tidak ada potongan kode tersebut pada elemen form?__
 
-Kegunaan syntax {% csrf_token %} pada elemen form adalah sebagai tindakan pengamanan web karena dapat menghindarkan web serta user dari serangan Cross-Site Request Forgery (CSRF). Jika tidak terdapat syntax {% csrf_token %} pada elemen <form>, request dari user tidak diizinkan untuk diproses dan akan terbaca sebagai threat CSRF oleh program.
+Kegunaan syntax {% csrf_token %} pada elemen form adalah sebagai tindakan pengamanan web karena dapat menghindarkan web serta user dari serangan Cross-Site Request Forgery (CSRF). Jika tidak terdapat syntax {% csrf_token %} pada elemen form, request dari user tidak diizinkan untuk diproses dan akan terbaca sebagai threat CSRF oleh program.
 
 
 
-__Apakah kita dapat membuat elemen <form> secara manual (tanpa menggunakan generator seperti {{ form.as_table }})? Jelaskan secara gambaran besar bagaimana cara membuat <form> secara manual__
+__Apakah kita dapat membuat elemen form secara manual (tanpa menggunakan generator seperti {{ form.as_table }})? Jelaskan secara gambaran besar bagaimana cara membuat form secara manual__
 
 Ya, bisa dengan menjadikan form sebagai object melalui input fields pada file HTML. Lalu, menggunakan method POST untuk melakukan triggering input yang dimasukkan user.
 
@@ -43,4 +43,4 @@ __Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas!__
 
 
 ## Link Aplikasi Heroku
-Lihat HTML di [link ini.](https://pbp-tugas-2-shamira.herokuapp.com/todolist)
+Akses To Do List di [link ini.](https://pbp-tugas-2-shamira.herokuapp.com/todolist)
