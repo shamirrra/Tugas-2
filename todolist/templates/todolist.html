@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>{{ username }}'s To Do List</h1>
+
+<h3>Let's plan your day!</h3>
+
+<button style="background-color:rgb(203, 240, 211)"><a href="{% url 'todolist:create_task' %}">Create New Task</a></button>
+<button style="background-color:rgb(235, 151, 153)"><a href="{% url 'todolist:logout' %}">Logout</a></button>
+
+<hr>
+<table border="5"; bordercolor="purple" ; bgcolor="pink">
+    <tr>
+        <th>Date</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Status</th>
+        <th colspan="2">Change Button</th>
+    </tr>
+    {% for todo in to_do_list %}
+    <tr>
+        <th>{{todo.date}}</th>
+        <th>{{todo.title}}</th>
+        <th>{{todo.description}}</th>
+        {% if todo.is_finished %}
+        <th>Done</th>
+        {% else %}
+        <th>In Progress</th>
+        {% endif %}
+        <th><button style="background-color:rgb(254, 240, 220)"><a href="{% url 'todolist:task_status' todo.pk %}">Change Status</a></button></th>
+        <th><button style="background-color:rgb(229, 194, 240)"><a href="{% url 'todolist:delete_task' todo.pk %}">Delete Task</a></button></th>
+    </tr>
+    {% endfor %}
+</table>
+
+<h5>last accessed on: {{ last_login }}</h5>
+
+{% endblock content %}
