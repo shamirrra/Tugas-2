@@ -1,34 +1,95 @@
 {% extends 'base.html' %}
 
 {% block meta %}
-<title>Account Registration</title>
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    }
+    body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background: -webkit-linear-gradient(right, #56d8e4, #9f01ea);
+    height: 100vh;
+    overflow: hidden;
+    }
+    .container{
+    position: relative;
+    width: 600px;
+    height: 550px;
+    background: white;
+    border-radius: 10px;
+    padding: 25px 25px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+    }
+    .container .form{
+    padding: 30px;
+    }
+    .btn{
+    width: 30%;
+    height: 40px;
+    color: white;
+    background: #56d8e4;
+    border: 2px solid purple;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 10px 0 20px 0;
+    font-weight: 700;
+    font-size: 16px;
+    }
+    .btn:hover{
+    border-color: #5b13b9;
+    text-decoration: underline;
+    transition: .5s;
+    }
+    .title{
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    }
+    .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: purple;
+    border-radius: 25px;
+    }
+</style>
 {% endblock meta %}
 
-{% block content %}  
-
-<div class = "login">
-    
-    <h1>Register here!</h1>  
-
-        <form method="POST" >  
-            {% csrf_token %}  
-            <table>  
-                {{ form.as_table }}  
-                <tr>  
-                    <td></td>
-                    <td><input type="submit" name="submit" value="Register"/></td>  
-                </tr>  
-            </table>  
-        </form>
-
-    {% if messages %}  
-        <ul>   
-            {% for message in messages %}  
-                <li>{{ message }}</li>  
-                {% endfor %}  
-        </ul>   
-    {% endif %}
-
-</div>  
-
+{% block content %}
+<body>
+    <div class="container">
+        <div class="login">
+            <span class="title">Register Here</span>
+            <form method="POST">
+                {% csrf_token %}
+                <div class="table-responsive">
+                    <table class="table table-borderless"> 
+                        {{ form.as_table }}
+                        <tr>
+                            <td></td>
+                            <td><input class="btn" type="submit" name="submit" value="Register" /><a href="{% url 'todolist:login' %}" class="btn">Back</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </form>
+            {% if messages %}
+                <ul>
+                    {% for message in messages %}
+                    <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+    </div>
+</body>
 {% endblock content %}

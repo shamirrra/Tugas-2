@@ -1,45 +1,108 @@
 {% extends 'base.html' %}
 
-{% block meta %}
-<title>Login</title>
-{% endblock meta %}
-
 {% block content %}
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Login Form</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel = "stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;500;600&family=Nunito:wght@400;500;600;700;900&family=Poppins:wght@400;500;600&family=Roboto+Slab:wght@400;500;600&display=swap">
+        <style>
+            *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            }
+            body{
+            display: flex;
+            margin: 0;
+            padding: 0;
+            background: -webkit-linear-gradient(right, #56d8e4, #9f01ea);
+            height: 100vh;
+            overflow: hidden;
+            }
+            .container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+            }
+            .container .login-form {
+            padding: 30px;
+            }
+            .container .forms .title{
+            position: relative;
+            font-size: 30px;
+            font-weight: 600;
+            }
+            .forms .title::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 30px;
+            background-color: purple;
+            border-radius: 25px;
+            }
+            .login-form .btn{
+            width: 30%;
+            height: 40px;
+            color: white;
+            background: #56d8e4;
+            border: 2px solid purple;
+            box-sizing: border-box;
+            border-radius: 10px;
+            margin: 10px 0 20px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
+        <div class = "container">
+            <div class="forms">
+                <div class ="login-form">
+                    <span class = "title">Login Here</span>
+                    <p></p>
+                        <form method="POST" action="">
+                            {% csrf_token %}
+                            <div class = "input-field">
+                                <input type="text" name="username" placeholder="username" required>
+                            </div>
+                            <div class = "input-field">
+                                <input type="password" name="password" placeholder="password" required>
+                            </div>
+                            <input class="btn login_btn" type="submit" value="Login">
 
-<div class = "login">
+                            <div class = "regist">
+                                <span> Don't have an account? <a href="{% url 'todolist:register' %}">Register here</a></span>
+                            </div>
+                        </form>
+                    </div>    
 
-    <h1>Login</h1>
+                    {% if messages %}
+                    <ul>
+                        {% for message in messages %}
+                        <li>{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
 
-    <form method="POST" action="">
-        {% csrf_token %}
-        <table>
-            <tr>
-                <td>Username: </td>
-                <td><input type="text" name="username" placeholder="Username" class="form-control"></td>
-            </tr>
-                    
-            <tr>
-                <td>Password: </td>
-                <td><input type="password" name="password" placeholder="Password" class="form-control"></td>
-            </tr>
+                </div>
 
-            <tr>
-                <td></td>
-                <td><input class="btn login_btn" type="submit" value="Login"></td>
-            </tr>
-        </table>
-    </form>
-
-    {% if messages %}
-        <ul>
-            {% for message in messages %}
-                <li>{{ message }}</li>
-            {% endfor %}
-        </ul>
-    {% endif %}     
+            </div>
         
-    Don't have an account? <a href="{% url 'todolist:register' %}">Register here</a>
+        </div>
 
-</div>
+    </body>
+    {% endblock content %}
 
-{% endblock content %}
+</html>
