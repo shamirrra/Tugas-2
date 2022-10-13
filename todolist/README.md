@@ -21,12 +21,12 @@ __Dalam penerapan JavaScript dan AJAX, terdapat penerapan paradigma Event-Driven
 
 _Event-Driven Programming_ merupakan paradigma pemrograman yang ditentukan dengan event. Event yang terjadi merupakan output dari tindakan yang dilakukan oleh user. Konsep _event-driven_ juga dapat dilihat sebagai interaksi antar objek yang mengirimkan pesan. Ketika user berinteraksi dengan halaman website lalu misalnya melakukan click pada tombol, event ini akan diterima sebagai suatu pesan. Pesan tersebut akan diteruskan ke kode JavaScript yang disebut event handler. Event handler akan memproses pesan tersebut dan memberikan respons berupa perubahan atau tampilan baru pada halaman website.
 
-Penerapan paradigma _event-driven programming_ pada tugas ini adalah ketika user menekan tombol save pada halaman create task. Event tersebut dilakukan handle dengan AJAX untuk meneruskan data task baru ke server. Selanjutnya, pada halaman todolist akan muncul task baru yang telah dilakukan _update_ oleh AJAX.<br/>
+Penerapan paradigma _event-driven programming_ pada tugas ini adalah ketika user menekan tombol save pada halaman create task. Event tersebut dilakukan handle dengan AJAX untuk meneruskan data task baru ke server. Selanjutnya, pada halaman todolist akan muncul task baru yang telah dilakukan _update_ oleh AJAX.
 
 
 __Jelaskan penerapan asynchronous programming pada AJAX.__
 
-Setelah user memasukkan data baru, AJAX akan mengambil data tersebut lalu mengirimkannya dalam bentuk XML, JSON, ataupun teks kepada server. Lalu, AJAX akan memperbarui halaman website dengan data baru dari user. Proses ini terjadi di belakang layar atau secara asinkronus sehingga user tidak perlu melakukan _reload_ keseluruhan halaman website untuk melihat _update_ data.<br/>
+Setelah user memasukkan data baru, AJAX akan mengambil data tersebut lalu mengirimkannya dalam bentuk XML, JSON, ataupun teks kepada server. Lalu, AJAX akan memperbarui halaman website dengan data baru dari user. Proses ini terjadi di belakang layar atau secara asinkronus sehingga user tidak perlu melakukan _reload_ keseluruhan halaman website untuk melihat _update_ data.  
 
 
 __Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas!__
