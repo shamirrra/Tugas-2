@@ -14,7 +14,7 @@
     "model":"mywatchlist.watchlist",
     "pk":2,
     "fields":{
-        "watched": false,
+        "watched": true,
         "title": "Sweet and Sour",
         "rating": "4",
         "release_date": "June 4, 2021",
