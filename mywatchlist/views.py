@@ -7,8 +7,13 @@ from mywatchlist.models import WatchList
 
 def show_watch_list(request):
     data_watch_list = WatchList.objects.all()
+    status = data_watch_list.filter(
+        watched = True).count() > data_watch_list.filter(
+            watched = False).count()
     context = {
         'watch_list': data_watch_list,
+        'status': 'You have watched a lot!' if status
+                   else 'You still have a lot to catch up',
         'name': 'Shamira',
         'student_id': '2106636376',
     }

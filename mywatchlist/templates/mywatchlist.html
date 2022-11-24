@@ -19,11 +19,17 @@
             <tr>
                 <th>{{item.title}}</th>
                 <th>{{item.rating}}</th>
-                <th>{{item.watched}}</th>
+                {% if item.watched %}
+                    <th>yes</th>
+                {% else %}
+                    <th>not yet</th>
+                {% endif %}
                 <th>{{item.release_date}}</th>
                 <th>{{item.review}}</th>
             </tr>
         {% endfor %}
     </table>
+
+    <h3>{{ status }}</h3>
 
 {% endblock content %}
